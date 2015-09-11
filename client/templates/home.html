@@ -1,0 +1,45 @@
+---
+name: home
+url: /
+animationIn: fadeIn
+---
+
+<div class="grid-block">
+	<div class="grid-content">
+	  <h1>Find Your Joy</h1>
+	  <p class="lead">Explore the best Lake Erie has to offer.</p>
+		<span class="inline-label">
+			<input type="search" placeholder="Search by city or zip code">
+			<a href="#" ui-sref="results" class="button"><img zf-iconic="" icon="magnifying-glass" size="small"></a>
+		</span>
+	</div>
+</div>
+<hr>
+
+<div class="grid-block">
+	<div class="grid-content large-6">
+		<h3>Discover the Outdoors!</h3>
+    <p>Phasellus varius leo ac viverra sodales. Aenean feugiat, felis eu tincidunt faucibus, nunc justo pharetra augue, in tempor massa tellus quis neque. Integer sed nisi ac neque scelerisque aliquet. Nulla rhoncus, odio non accumsan porttitor.</p>
+	</div>
+	<div class="grid-content large-6">
+		<h3>Add &amp; Share</h3>
+    <p>Quisque convallis accumsan massa. Morbi eu varius diam. Nulla facilisi. Nunc maximus nec eros pretium consectetur. Fusce sit amet arcu eget lacus sodales pellentesque.</p>
+	</div>
+</div>
+
+<div class="grid-block">
+	<div class="grid-content">
+		<hr>
+		<h4>Featured Locations</h4>
+    <p>Each week we feature the top hiking, running, and biking trails as well as upcoming events and top locations.</p>
+    <p><a ui-sref="home.featured" class="button">View Featured Locations</a></p>
+	</div>
+</div>
+
+<!-- featured trails view -->
+<div ui-view></div>
+
+
+
+
+

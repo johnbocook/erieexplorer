@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ErieExplorer</title>
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </head>
+  <body>
+    <div class="grid-frame vertical">
+      <div class="grid-block shrink wrap" style="padding: 0;">
+
+        <div class="grid-content collapse small-12 medium-5">        
+          <ul class="primary menu-bar">
+            <li ui-sref-active="is-active">
+              <a ui-sref="home"><strong><img zf-iconic="" icon="flag" size="small" class="float-left">&nbsp;ErieExplorer</strong></a>
+            </li>
+          </ul>
+        </div>
+        <div class="grid-content collapse small-12 medium-7">        
+          <ul class="primary menu-bar">
+            <li ui-sref-active="is-active"><a ui-sref="add">Add</a></li>
+            <li ui-sref-active="is-active"><a ui-sref="about">About</a></li>
+            <li ui-sref-active="is-active"><a ui-sref="contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="grid-block">
+        <div class="grid-block show-for-medium medium-5">
+         <iframe id="lakemap" width='100%' height='720px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jbocook.ndiihe7a/attribution,zoompan,zoomwheel,geocoder.html?access_token=pk.eyJ1IjoiamJvY29vayIsImEiOiI4YzRkNzA5YjAzMDAzMTU0MDU4YmEzYzQ1YjJkM2IwOSJ9.yTHsWSqmSRiw4OX9_Gs66Q'></iframe>
+        </div>
+        <div ui-view class="grid-content"></div>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
